@@ -1,0 +1,24 @@
+.theTitle{
+  margin-top: 15px;
+  height: 300px;
+  width: 80em;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-radius: 15px;
+}   
+
+.theTitle h3{
+  padding-top: 10px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.theTitle p{
+  text-align: center;
+}
+
+.resources{
+  text-align: center;
+}

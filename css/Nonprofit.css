@@ -1,0 +1,101 @@
+.nonprofit-info{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+  .cards{
+    margin: 10px ;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+  .card{
+    box-shadow: 0 0 10px rgba(36, 33, 33, 0.1);
+    margin: 0;
+    width: 300px;
+   
+    border-radius: 25px;
+}
+
+#info{
+  background-color: green;
+  width:300px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+text-align: center;
+}
+
+.cardContent{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: lightgrey;
+    height: 205px;
+    /* height: 200px; chinese*/
+    /* height: 360px; spanish */
+}
+#monkeypoxImg  {
+display:flex;
+justify-content: center;
+height: 200px;
+}
+.imageMonkey{
+  width: 200px;
+}
+
+
+
+.skinTitle{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#monkeyLink{
+text-decoration: none;
+}
+
+
+/* form: */
+#form{
+  width: 500px;
+  border: 2px solid orangered;
+  padding: 2rem;
+  position: absolute;
+  top: 140px;
+  left: 1000px;
+}
+label{
+  display: block;
+  padding: 1rem 0.25rem;
+}
+input, textarea{
+  display: block;
+  width: 430px;
+  border: 2px solid lightskyblue;
+  padding: 5px;
+}
+
+select{
+  display: block;
+  margin: 0;
+  width: 434px;
+  padding: 5px;
+  border: 2px solid lightskyblue;
+}
+
+#submit{
+  margin-top: 2rem;
+  padding: 5px;
+border:0px;
+background-color: rgb(247, 242, 242)
+}
+
+

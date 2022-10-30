@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#dropdown {
+  display: none;
+  list-style: none;
+  background-color: cadetblue;
+  position: absolute;
+  left: 400px;
+  top: 50px;
+}
+
+/* form: */
+#form {
+  max-width: 500px;
+  margin-left: 260px;
+  margin-top: 20px;
+  border: 2px solid orangered;
+  padding: 2rem;
+}
+label {
+  display: block;
+  padding: 1rem 0.25rem;
+}
+input,
+textarea {
+  display: block;
+  width: 500px;
+  border: 2px solid lightskyblue;
+  padding: 5px;
+}
+
+select {
+  display: block;
+  margin: 0;
+  width: 514px;
+  padding: 5px;
+  border: 2px solid lightskyblue;
+}
+
+#submit {
+  margin-top: 2rem;
+  padding: 5px;
+  border: 0px;
+  background-color: rgb(247, 242, 242);
+}
+
+/* non profit: */
+.image img {
+  width: 390px;
+  margin: 18px;
+}
+.image {
+  border: green;
+  border-right-style: solid;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.description {
+  font-size: 30px;
+  padding: 10px;
+}
+.nonProfitTitle {
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  border-style: solid;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  height: 100px;
+}
+.donatebtn {
+  padding: 5px;
+  border: 0px;
+  background-color: lightseagreen;
+}
+.readbtn {
+  padding: 5px;
+  border: 0px;
+  background-color: lightgreen;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  text-decoration: none;
+}
+
+.solutionTxt{
+  padding-left:20px;
+}
+#solutionTxt{
+  margin-top: 40px;
+}
+#probTxt{
+  padding-left:20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+#bio{
+  padding-left:20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+h1{
+  text-align:center;
+}
+p{
+  margin-right:10px;
+}
+.solution{
+  max-width:557px;
+}
+.about{
+  max-width: 700px;
+  max-height: 350px;
+}
+#solution{
+  display:flex;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+#aboutPreview{
+  display:flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+#problem {
+  display:flex;
+  margin-left: 10px;
+  margin-right:10px;
+}
+.problem{
+  max-width:550px;
+  max-height:400px;
+}
+img {
+  padding-right: 30px;
+  padding-top:10px;
+  padding-left:15px;
+}
+.item{
+  justify-content: space-around;
+}
+.contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,45 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f1f1f1;
+}
+#aboutthisproject {
+  border-radius: 25px;
+  border: 5px solid seagreen;
+  padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 50%;
+  background-color: #e1e1e1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#profilecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.profilebox {
+  border: 5px solid seagreen;
+  border-radius: 25px;
+  padding: 20px;
+  padding-top: 35px;
+  margin: 5px;
+  background-color: #e1e1e1;
+  width: 240px;
+  display: inline-block;
+}
+.imgcenter {
+  border: 2px solid green;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
