@@ -1,24 +1,234 @@
-.theTitle{
-  margin-top: 15px;
-  height: 300px;
-  width: 80em;
-  background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  border-radius: 15px;
-}   
+*  {
+  margin: 0;
+  padding: 0;
+}
+.transportContainer{
+  display: flex;
+  flex-direction: column;
+  
 
-.theTitle h3{
-  padding-top: 10px;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
 }
 
-.theTitle p{
+.proConTitle{
+  width: 300px;
+  font-size: 20px;
+  background-color: green;
   text-align: center;
 }
-
-.resources{
+.content{
+  padding: 5px;
+ width: 300px; 
+ background-color: lightyellow;
+ border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   text-align: center;
+  height: 50px;
+  color: black;
+}
+.content1{
+  padding: 5px;
+  width: 300px; 
+  background-color: lightyellow;
+ text-align: center;
+ height: 50px;
+ color: black;
+}
+.demoImage img{
+width: 300px;
+height:300px;
+}
+.transportContainer{
+  width: 300px;
+  margin: 20px;
+}
+.transportTitle{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 300px;
+  background-color: green;
+  text-align: center;
+  font-size: 30px;
+}
+.demoImage{
+  margin:0px;
+  padding: 0px;
+}
+#cardContainer{
+  display: flex;
+  padding-left: 90px;
+}
+
+#solutionImg{
+  margin-left: 100px;
+  width: 500px;
+  height: 700px;
+}
+
+#solutionTitle{
+  display: flex;
+  margin-left: 100px;
+  font-size: 50px;
+  width: 1400px;
+  height: 55px;
+  background-color: green;
+}
+
+
+
+/*chat*/
+
+/* 
+  @NOTE color palette generated with https://coolors.co
+  also using CSS variables to make things easier to change
+  in the future. learn more about CSS vars here:
+  https://www.w3schools.com/css/css3_variables.asp
+
+  primary: #16262E
+  secondary: #2E4756
+  accent: #3C7A89
+*/
+:root {
+  --primary: white;
+  --secondary: #2C5763;
+  --accent: #63A9BB;
+}
+
+body {
+  /* size and colors */
+  background-color: var(--primary);
+  color: #fff;
+
+  /* flexbox styling */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* text */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#chatbox-container {
+  /*
+      @NOTE using responsive units (vw and vh) here.
+      learn more here: https://www.w3schools.com/cssref/css_units.asp
+  */
+  /* size and colors */
+  position:absolute;
+  top: 700px;
+  width: 55vw;
+  height: 85vh;
+  background-color: var(--secondary);
+  
+  /* CSS box model */
+  margin-left: 630px;
+  padding: 1%;
+  border-radius: 10px;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#all-messages {
+  /* size and colors */
+  width: 90%;
+  height: 70%;
+  background-color: #fff;
+  color: #000;
+
+  /* CSS box model */
+  border-radius: 10px;
+  margin: 1%;
+
+  /* visiblity */
+  overflow-wrap: normal;
+  overflow-y: auto;
+}
+
+#typing-container {
+  /* size and colors */
+  width: 90%;
+  height: 10%;
+  background-color: var(--accent);
+  
+  /* CSS box model */
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+
+  /* flexbox */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form {
+  /* size and colors */
+  width: 80%;
+  height: 80%;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+form input {
+  width: 80%;
+  height: 80%;
+
+  font-size: 1.2em;
+  border-radius: 2px;
+}
+
+form label {
+  font-size: 1.2em;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#send-btn {
+  width: 15%;
+  height: 50%;
+
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+
+  font-size: 1.2em;
+}
+
+#send-btn:hover {
+  background-color: var(--primary);
+  box-shadow: 2px 2px 2px #4d4d4d;
+}
+
+#send-btn:active {
+  transform: scale(0.98);
+}
+
+.single-message {
+  display: flex;
+}
+
+.single-message p {
+  margin: 1%;
+}
+
+.single-message-username {
+  font-weight: 600;
 }

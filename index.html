@@ -11,14 +11,25 @@
     />
     <link rel="stylesheet" href="./css/NavBar.css" />
     <link rel="stylesheet" href="./css/HomePage.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <script src="./javascript/index.js" defer></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    
+    <!-- @NOTE initializing firebase -->
+    <script defer src="./javascript/firebase.js"></script>
+
+    <!-- @NOTE link our main.js AFTER we load initialize firebase -->
+    <script defer src="./javascript/chat.js"></script>
+
+
     <title>ECO-Fighers - HomePage</title>
   </head>
   <body>
     <!-- Header -->
     <header id="header" class="shadow bg-light">
       <nav class="container navbar">
-        <a href="/index.html" class="nav-brand text-dark"> Eco-Fighters </a>
+        <a href="./index.html" class="nav-brand text-dark"> Eco-Fighters </a>
 
         <!-- toggle button -->
         <button class="toggle-button">
@@ -58,23 +69,151 @@
      
   </div>
   <br>
-  <div id="problem">
-      <div id="probTxt">
-      <h1>The Problem</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus fuga quibusdam vero ad facere, voluptates numquam tempore commodi. Nihil obcaecati amet, error quod corrupti ipsum expedita excepturi vero quos quo? Odio quisquam pariatur magni minima voluptatum! Amet numquam sed error ipsa, voluptates fuga sint cum laborum repudiandae architecto natus iusto? Expedita libero quas explicabo, ratione illo fugit eum voluptatibus ipsum nobis. Mollitia delectus recusandae perspiciatis ab quam iusto eaque, repellat unde ipsa odit id, tempora non beatae pariatur laboriosam inventore facilis aspernatur voluptatem suscipit animi alias nihil ipsum adipisci. Ipsa, voluptatem. Quam dolores vel voluptates non! Corrupti, nihil ut!</p>
-      </div>
-      <!-- <img class='problem' src="images.problem.png"> -->
-      <img class="problem" src="images.problem.png" alt="">
-  </div>
-  <br>
-  <div id="solution">
-      <img class='solution' src="image.solution.jpg">
-      <div id="solutionTxt">
-      <h1>Our Solution</h1>
-      <p class="solutionTxt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, molestias. Odio animi ipsum expedita nisi, velit id doloremque eveniet exercitationem temporibus sunt praesentium obcaecati vel officia, iusto amet tempore deserunt autem nostrum similique mollitia excepturi. Consectetur nostrum laborum eaque quasi nisi magni eveniet quisquam dignissimos blanditiis nihil exercitationem dolore dolorem, totam enim tenetur esse itaque architecto excepturi magnam voluptate aspernatur natus explicabo rerum? Blanditiis modi minima libero amet, alias qui ipsum sed nemo ex exercitationem voluptas nobis dicta quam consequatur, temporibus iste atque facilis molestias, rem itaque aperiam! Laboriosam autem aliquid, itaque rerum necessitatibus ab nemo ullam dolorum quae vero.
-      </p>
-  </div>
-  </div>
+  <div id = cardContainer>
+    <div class = transportContainer>
+        <div class = transportTitle>
+            Car
+        </div>
+        <div class = demoImage>
+            <img src = images/car.png>
+        </div>
+        <div class = contentContainer>
+            <div class =proConTitle>
+                Pros:
+            </div>
+            <div class = content1>
+              Fast    
+             </div>
+            <div class = proConTitle>
+                Cons:
+            </div>
+            <div class = content>
+              Causes pollution from carbon monoxide emissions.
+            </div>
+        </div>
+    </div>
+    <div class = transportContainer>
+        <div class = transportTitle>
+            Train
+        </div>
+        <div class = demoImage>
+            <img src = images/train.png>
+        </div>
+        <div class = contentContainer>
+            <div class =proConTitle>
+                Pros:
+            </div>
+            <div class = content1>
+            Faster than walking and cause less pollution.
+             </div>
+            <div class = proConTitle>
+                Cons:
+            </div>
+            <div class = content>
+              Causes some pollution and not everywhere has trains. 
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class = transportContainer>
+        <div class = transportTitle>
+            Walking
+        </div>
+        <div class = demoImage>
+            <img src = images/walking.png>
+        </div>
+        <div class = contentContainer>
+            <div class =proConTitle>
+                Pros:
+            </div>
+            <div class = content1>
+             No pollution and great excercise. 
+             </div>
+            <div class = proConTitle>
+                Cons:
+            </div>
+            <div class = content>
+              Takes a long time to get from place to place. 
+            </div>
+        </div>
+        
+    </div>
+    <div class = transportContainer>
+        <div class = transportTitle>
+            Cycling
+        </div>
+        <div class = demoImage>
+            <img src = images/bike.png>
+        </div>
+        <div class = contentContainer>
+            <div class =proConTitle>
+                Pros:
+            </div>
+            <div class = content1>
+              Fast and causes no pollution. 
+             </div>
+            <div class = proConTitle>
+                Cons:
+            </div>
+            <div class = content>
+              Not everywhere has a bike path. 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- solution -->
+<div id = solutionTitle>
+    Eco-Mode:
+</div>
+<div>
+    <img id = solutionImg src="images/solutionCar.png">
+</div>
+
+<div id="chatbox-container">
+    <h1 id="title">Ride Share</h1>        
+
+    <!-- @NOTE this is where we'll append messages -->
+    <div id="all-messages">
+        <!-- @NOTE sample message -->
+        <!-- <div class="single-message">
+            <p class="single-message-username">andymina:</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloremque laboriosam dignissimos molestias ad illum odio
+                dolor beatae dolore! Possimus laborum culpa debitis at
+                obcaecati sit assumenda, placeat delectus reiciendis
+                accusamus!
+            </p>
+        </div> -->
+    </div>
+
+    <div id="typing-container">
+        <form>
+            <!-- @NOTE this input has an id #username -->
+            <div class="input-container">
+                <label>Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                />
+            </div>
+            
+            <!-- @NOTE this input has an id #message -->
+            <div class="input-container">
+                <label>Message:</label>
+                <input
+                    type="text"
+                    id="message"
+                />
+            </div>
+        </form>
+
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+</div>
 
     <script src="./javascript/index.js" defer></script>
   </body>
