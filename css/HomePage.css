@@ -10,14 +10,14 @@
 }
 
 .proConTitle{
-  width: 300px;
+  width: 350px;
   font-size: 20px;
   background-color: green;
   text-align: center;
 }
 .content{
   padding: 5px;
- width: 300px; 
+ width: 350px; 
  background-color: lightyellow;
  border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -27,24 +27,24 @@
 }
 .content1{
   padding: 5px;
-  width: 300px; 
+  width: 350px; 
   background-color: lightyellow;
  text-align: center;
  height: 50px;
  color: black;
 }
 .demoImage img{
-width: 300px;
-height:300px;
+width: 350px;
+height:350px;
 }
 .transportContainer{
-  width: 300px;
+  width: 400px;
   margin: 20px;
 }
 .transportTitle{
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  width: 300px;
+  width: 350px;
   background-color: green;
   text-align: center;
   font-size: 30px;
@@ -59,8 +59,9 @@ height:300px;
 }
 
 #solutionImg{
+  margin-top: 30px;
   margin-left: 100px;
-  width: 500px;
+  width: 580px;
   height: 700px;
 }
 
@@ -68,13 +69,21 @@ height:300px;
   display: flex;
   margin-left: 100px;
   font-size: 50px;
-  width: 1400px;
+  width: 1700px;
   height: 55px;
   background-color: green;
 }
 
+.titleDirect{
+text-align: center;
+color: black;
+font-size: 50px;
+margin-left: 100px;
+}
 
-
+#dropbtn{
+  color: black;
+}
 /*chat*/
 
 /* 
@@ -121,13 +130,13 @@ body {
   */
   /* size and colors */
   position:absolute;
-  top: 700px;
+  top: 850px;
   width: 55vw;
   height: 85vh;
   background-color: var(--secondary);
   
   /* CSS box model */
-  margin-left: 630px;
+  margin-left: 742px;
   padding: 1%;
   border-radius: 10px;
 
